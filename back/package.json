@@ -23,7 +23,7 @@
     "nodemon": "^2.0.14"
   },
   "scripts": {
-    "start": "node app",
-    "start:dev": "nodemon --watch src/ -r esm src/index.js"
+    "dev": "nodemon app",
+    "start": "cross-env NODE_ENV=production pm2 start app.js"
   }
 }
